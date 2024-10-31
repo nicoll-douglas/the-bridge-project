@@ -1,4 +1,5 @@
 import Providers from "@/providers";
+import { Background } from "@/features/ui/themes";
 
 export default function RootLayout({
   children,
@@ -8,7 +9,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Background />
+          {children}
+        </Providers>
       </body>
     </html>
   );
