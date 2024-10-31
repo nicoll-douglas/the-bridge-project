@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import { ToggleThemeBtn } from "@/features/ui/themes";
-import ResourceLinks from "./ResourceLinks";
-import ButtonLink from "./ButtonLink";
+import ResourceLinks from "@/components/common/ResourceLinks";
+import ButtonLink from "@/components/common/ButtonLink";
 import { WordmarkLink } from "@/components/wordmark";
 
 export default function Header() {
