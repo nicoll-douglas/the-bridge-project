@@ -1,4 +1,4 @@
-import { Provider } from "@/components/chakra-snippets/provider";
+import Providers from "@/providers";
 
 export default function RootLayout({
   children,
@@ -6,9 +6,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body>
-        <Provider>{children}</Provider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
