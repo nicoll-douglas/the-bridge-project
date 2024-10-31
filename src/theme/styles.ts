@@ -1,7 +1,7 @@
 const styles = {
   global: {
     body: {
-      backgroundColor: "blue.25",
+      backgroundColor: "brand.50",
       minHeight: "100vh",
       bg: "transparent",
       zIndex: 10,

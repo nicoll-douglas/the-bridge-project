@@ -20,7 +20,7 @@ export default function Background() {
         top={0}
         left={0}
         zIndex={-10}
-        bg={colorMode === "light" ? "blue.25" : "blue.900"}
+        bg={colorMode === "light" ? "brand.50" : "brand.500"}
       />
     </motion.div>
   );
