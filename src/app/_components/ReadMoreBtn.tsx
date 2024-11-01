@@ -4,13 +4,15 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import { Box, Button } from "@chakra-ui/react";
 import { useAccentColor } from "@/hooks";
 
+export interface ReadMoreBtnProps {
+  hasText?: boolean;
+  scrollsTo: string;
+}
+
 export default function ReadMoreBtn({
   hasText = false,
   scrollsTo,
-}: {
-  hasText?: boolean;
-  scrollsTo: string;
-}) {
+}: ReadMoreBtnProps) {
   const accentColor = useAccentColor();
 
   function handleClick() {
