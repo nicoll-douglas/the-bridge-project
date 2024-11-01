@@ -1,5 +1,5 @@
 import { Flex, Heading, Text, Image, Center } from "@chakra-ui/react";
-import { ReadMoreBtnProps } from "../ReadMoreBtn";
+import { ReadMoreBtnProps } from "./ReadMoreBtn";
 import GenericSection from "./GenericSection";
 
 export default function MarketingSection({

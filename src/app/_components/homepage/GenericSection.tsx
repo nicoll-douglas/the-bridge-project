@@ -1,5 +1,5 @@
 import { Center, Flex, FlexProps } from "@chakra-ui/react";
-import ReadMoreBtn, { ReadMoreBtnProps } from "../ReadMoreBtn";
+import ReadMoreBtn, { ReadMoreBtnProps } from "./ReadMoreBtn";
 
 interface GenericSectionProps extends FlexProps {
   id?: string;
