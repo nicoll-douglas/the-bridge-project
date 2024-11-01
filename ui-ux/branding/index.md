@@ -3,44 +3,36 @@
 ## Table of Contents
 
 1. [Colors](#1-colors)
-   1. [Neutral](#11-neutral)
-   2. [Accent](#12-accent)
-   3. [Chakra UI Colors](#13-chakra-ui-colors)
 2. [Typography](#2-typography)
-   1. [Wordmark](#21-wordmark)
-   2. [Base](#22-base)
 
 ## 1. Colors
 
-### 1.1 Neutral
+![#f0fbff](https://singlecolorimage.com/get/f0fbff/20x20)
+![#d9f3fe](https://singlecolorimage.com/get/d9f3fe/20x20)
+![#ebf8ff](https://singlecolorimage.com/get/ebf8ff/20x20)
+![#b5d9f0](https://singlecolorimage.com/get/b5d9f0/20x20)
+![#7baed8](https://singlecolorimage.com/get/7baed8/20x20)
+![#1A365D](https://singlecolorimage.com/get/1A365D/20x20)
+![#202f4c](https://singlecolorimage.com/get/202f4c/20x20)
+![#1a2a3d](https://singlecolorimage.com/get/1a2a3d/20x20)
+![#131e2f](https://singlecolorimage.com/get/131e2f/20x20)
+![#0c1624](https://singlecolorimage.com/get/0c1624/20x20)
 
-| Context    | Color Code (Hex)                                                                  | Theme |
-| ---------- | --------------------------------------------------------------------------------- | ----- |
-| Text       | ![#000000](https://singlecolorimage.com/get/000000/11x11) - #000000               | Light |
-| Text       | ![#ffffff](https://singlecolorimage.com/get/ffffff/11x11) - #ffffff               | Dark  |
-| Background | ![#f1feff](https://singlecolorimage.com/get/f1feff/11x11) - #f1feff               | Light |
-| Background | ![#1a365d](https://singlecolorimage.com/get/1a365d/11x11) - #1a365d (Ck blue.900) | Dark  |
-
-### 1.2 Accent
-
-| Color Code (Hex)                                                                  | Theme |
-| --------------------------------------------------------------------------------- | ----- |
-| ![#1a365d](https://singlecolorimage.com/get/1a365d/11x11) - #1a365d (Ck blue.900) | Light |
-| ![#ebf8ff](https://singlecolorimage.com/get/ebf8ff/11x11) - #ebf8ff (Ck blue.50)  | Dark  |
-
-### 1.3 Chakra UI Colors
-
-See blue and neutral colors: [https://www.chakra-ui.com/docs/theming/colors](https://www.chakra-ui.com/docs/theming/colors).
+```javascript
+{
+  50: "#f0fbff",
+  100: "#d9f3fe",
+  200: "#EBF8FF",
+  300: "#b5d9f0",
+  400: "#7baed8",
+  500: "#1A365D",
+  600: "#202f4c",
+  700: "#1a2a3d",
+  800: "#131e2f",
+  900: "#0c1624",
+}
+```
 
 ## 2. Typography
 
-### 2.1 Wordmark
-
-- [Reem Kufi](https://fonts.google.com/specimen/Reem+Kufi)
-
-### 2.2 Base
-
-One of the below:
-
 - [Inter](https://fonts.google.com/specimen/Inter)
-- [Barlow](https://fonts.google.com/specimen/Barlow)
