@@ -1,13 +1,20 @@
+"use client";
+
 import { Flex } from "@chakra-ui/react";
 import { ToggleThemeBtn } from "@/features/ui/themes";
-import ResourceLinks from "@/components/common/ResourceLinks";
-import ButtonLink from "@/components/common/ButtonLink";
+import { ButtonLink, ResourceLinks } from "@/components/common";
 import { WordmarkLink } from "@/components/wordmark";
-import { MobileMenu } from "@/app/_components/mobile-menu";
+import { MobileMenu } from "../mobile-menu";
+import { useAccentColor, useIsScrolled } from "@/hooks";
 
 export default function Header() {
+  const accentColor = useAccentColor();
+  const accentColorInverted = useAccentColor({ invert: true });
+  const isScrolled = useIsScrolled();
+
   return (
     <Flex
+      bg={accentColorInverted}
       justifyContent={"space-between"}
       alignItems={"center"}
       p={4}
@@ -15,9 +22,11 @@ export default function Header() {
       position={"fixed"}
       top={0}
       left={0}
-      backdropFilter={"blur(10px)"}
       as={"header"}
       zIndex={1000}
+      borderBottomWidth={1}
+      borderColor={isScrolled ? accentColor : "transparent"}
+      style={{ transition: "border-color 1s ease" }}
     >
       <WordmarkLink href="/" />
       <ResourceLinks display={{ base: "none", xl: "flex" }} />

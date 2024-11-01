@@ -10,11 +10,13 @@ export default function MarketingSection({
   id: string;
   hasNext?: string;
 }) {
+  const headingId = crypto.randomUUID();
+
   return (
     <Center
       height={"100vh"}
       minHeight={"fit-content"}
-      py={"72px"}
+      py={"73px"}
       px={4}
       flexDir={"column"}
       id={id}
@@ -24,17 +26,19 @@ export default function MarketingSection({
         maxH={"fit-content"}
         flexDir={{ base: "column", md: reverse ? "row-reverse" : "row" }}
         alignItems={"center"}
-        as={"main"}
         px={{ base: 0, lg: 4 }}
         my={"auto"}
         py={8}
         gap={{ base: 4, md: 12 }}
+        as={"section"}
+        aria-labelledby={headingId}
       >
         <Flex gap={2} flexDir={"column"} alignItems={"start"}>
           <Heading
             fontSize={{ base: "4xl", lg: "5xl" }}
             lineHeight={1.2}
-            as={"h1"}
+            as={"h2"}
+            id={headingId}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </Heading>

@@ -28,6 +28,7 @@ export default function ReadMoreBtn({
       color={accentColor}
       onClick={handleClick}
       p={4}
+      {...(hasText ? {} : { "aria-label": "Scroll further" })}
     >
       <Box display={hasText ? "block" : "none"}>Read more</Box>
       <ChevronDownIcon />
