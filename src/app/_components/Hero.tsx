@@ -5,10 +5,10 @@ import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { useAccent } from "@/hooks";
+import { useAccentColor } from "@/hooks";
 
 export default function Hero() {
-  const accentColor = useAccent();
+  const accentColor = useAccentColor();
 
   return (
     <Flex

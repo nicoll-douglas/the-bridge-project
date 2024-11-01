@@ -1,1 +1,1 @@
-export { default as useAccent } from "./useAccent";
+export { default as useAccentColor } from "./useAccentColor";
