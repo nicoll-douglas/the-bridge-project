@@ -10,7 +10,7 @@ export default function WordmarkLink({
   href: string;
 }) {
   return (
-    <Link as={NextLink} href={href}>
+    <Link as={NextLink} href={href} aria-label="The Bridge Project | Home">
       <Wordmark size={size} />
     </Link>
   );

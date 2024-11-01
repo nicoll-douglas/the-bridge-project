@@ -11,9 +11,14 @@ export default function Hero() {
   const accentColor = useAccent();
 
   return (
-    <Flex maxW={"container.lg"} maxH={"fit-content"} alignItems={"center"}>
+    <Flex
+      maxW={"container.lg"}
+      maxH={"fit-content"}
+      alignItems={"center"}
+      as={"main"}
+    >
       <Flex gap={2} flexDir={"column"} alignItems={"start"}>
-        <Heading size={"2xl"} lineHeight={1.2} color={accentColor}>
+        <Heading size={"2xl"} lineHeight={1.2} color={accentColor} as={"h1"}>
           Freelance project management has never been so easy.
         </Heading>
         <Text fontSize={"lg"}>

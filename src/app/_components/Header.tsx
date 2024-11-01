@@ -16,6 +16,7 @@ export default function Header() {
       left={0}
       backdropFilter={"blur(10px)"}
       gap={16}
+      as={"header"}
     >
       <WordmarkLink href="/" />
       <ResourceLinks />

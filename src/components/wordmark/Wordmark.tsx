@@ -7,7 +7,7 @@ export default function Wordmark({ size = 9 }: { size?: number }) {
 
   return (
     <Image
-      alt="The Bridge Project"
+      alt="The Bridge Project Wordmark"
       src={
         colorMode === "light"
           ? "/wordmark-light-mode.svg"

@@ -13,6 +13,7 @@ export default function ToggleThemeBtn(
     <IconButton
       aria-label="Toggle dark mode"
       icon={isLight ? <MoonIcon /> : <SunIcon />}
+      aria-pressed={!isLight}
       onClick={() => setColorMode(isLight ? "dark" : "light")}
       variant={"ghost"}
       {...props}
