@@ -3,6 +3,7 @@ import { ToggleThemeBtn } from "@/features/ui/themes";
 import ResourceLinks from "@/components/common/ResourceLinks";
 import ButtonLink from "@/components/common/ButtonLink";
 import { WordmarkLink } from "@/components/wordmark";
+import { MobileMenu } from "@/app/_components/mobile-menu";
 
 export default function Header() {
   return (
@@ -15,17 +16,23 @@ export default function Header() {
       top={0}
       left={0}
       backdropFilter={"blur(10px)"}
-      gap={16}
       as={"header"}
     >
       <WordmarkLink href="/" />
-      <ResourceLinks />
+      <ResourceLinks display={{ base: "none", xl: "flex" }} />
       <Flex alignItems={"center"}>
-        <ButtonLink href="/auth/login">Login</ButtonLink>
-        <ButtonLink href="/auth/register" variant="solid" activeStyle ml={5}>
-          Register
-        </ButtonLink>
+        <Flex
+          alignItems={"center"}
+          gap={5}
+          display={{ base: "none", md: "flex" }}
+        >
+          <ButtonLink href="/auth/login">Login</ButtonLink>
+          <ButtonLink href="/auth/register" variant="solid" activeStyle>
+            Register
+          </ButtonLink>
+        </Flex>
         <ToggleThemeBtn ml={2} />
+        <MobileMenu ml={2} />
       </Flex>
     </Flex>
   );

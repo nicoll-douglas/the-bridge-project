@@ -1,7 +1,6 @@
 "use client";
 
-import { Flex, Heading, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Flex, Heading, Text, Image } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
@@ -12,13 +11,18 @@ export default function Hero() {
 
   return (
     <Flex
-      maxW={"container.lg"}
+      maxW={{ base: "md", md: "container.md", lg: "container.lg" }}
       maxH={"fit-content"}
       alignItems={"center"}
       as={"main"}
     >
       <Flex gap={2} flexDir={"column"} alignItems={"start"}>
-        <Heading size={"2xl"} lineHeight={1.2} color={accentColor} as={"h1"}>
+        <Heading
+          fontSize={{ base: "4xl", lg: "5xl" }}
+          lineHeight={1.2}
+          color={accentColor}
+          as={"h1"}
+        >
           Freelance project management has never been so easy.
         </Heading>
         <Text fontSize={"lg"}>
@@ -41,9 +45,8 @@ export default function Hero() {
       <Image
         alt="Hero image"
         src="/hero-image.svg"
-        width={475}
-        height={475}
-        priority={true}
+        width={{ base: "320px", md: "350px", lg: "475px" }}
+        display={{ base: "none", md: "block" }}
       />
     </Flex>
   );
