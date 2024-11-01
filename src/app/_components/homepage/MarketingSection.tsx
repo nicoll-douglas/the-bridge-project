@@ -1,5 +1,5 @@
 import { Flex, Heading, Text, Image, Center } from "@chakra-ui/react";
-import ReadMoreBtn from "./ReadMoreBtn";
+import ReadMoreBtn from "../ReadMoreBtn";
 
 export default function MarketingSection({
   reverse = false,

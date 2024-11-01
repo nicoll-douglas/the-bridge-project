@@ -4,7 +4,7 @@ import { Flex, Heading, Text, Image, Center, Button } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useAccentColor } from "@/hooks";
-import ReadMoreBtn from "./ReadMoreBtn";
+import ReadMoreBtn from "../ReadMoreBtn";
 
 export default function Hero() {
   const accentColor = useAccentColor();
