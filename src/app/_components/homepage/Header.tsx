@@ -24,9 +24,11 @@ export default function Header() {
       left={0}
       as={"header"}
       zIndex={1000}
-      borderBottomWidth={1}
-      borderColor={isScrolled ? accentColor : "transparent"}
-      style={{ transition: "border-color 1s ease" }}
+      // borderBottomWidth={1}
+      // borderColor={isScrolled ? accentColor : "transparent"}
+      // style={{ transition: "border-color 1s ease" }}
+      boxShadow={isScrolled ? "xl" : "none"}
+      style={{ transition: "box-shadow 1s ease" }}
     >
       <WordmarkLink href="/" />
       <ResourceLinks display={{ base: "none", xl: "flex" }} />
