@@ -6,6 +6,9 @@ const styles = {
       bg: "transparent",
       zIndex: 10,
     },
+    "::selection": {
+      bg: "brand.400",
+    },
   },
 };
 
