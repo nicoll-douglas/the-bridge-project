@@ -1,10 +1,11 @@
 "use client";
 
-import { Box, useColorMode } from "@chakra-ui/react";
+import { useAccent } from "@/hooks";
+import { Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 export default function Background() {
-  const { colorMode } = useColorMode();
+  const accentColor = useAccent({ invert: true });
 
   return (
     <motion.div
@@ -20,7 +21,7 @@ export default function Background() {
         top={0}
         left={0}
         zIndex={-10}
-        bg={colorMode === "light" ? "brand.50" : "brand.500"}
+        bg={accentColor}
       />
     </motion.div>
   );
