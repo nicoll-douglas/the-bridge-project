@@ -17,6 +17,7 @@ export default function Header() {
       left={0}
       backdropFilter={"blur(10px)"}
       as={"header"}
+      zIndex={1000}
     >
       <WordmarkLink href="/" />
       <ResourceLinks display={{ base: "none", xl: "flex" }} />

@@ -15,6 +15,9 @@ export default function Hero() {
       maxH={"fit-content"}
       alignItems={"center"}
       as={"main"}
+      px={{ base: 0, lg: 4 }}
+      my={"auto"}
+      py={{ base: 24, md: 12 }}
     >
       <Flex gap={2} flexDir={"column"} alignItems={"start"}>
         <Heading
